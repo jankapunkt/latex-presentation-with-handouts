@@ -27,6 +27,12 @@ glossary.ist
 .idx
 .xdy
 
+# beamer related
+.nav
+.snm
+.vrb
+
+
 # backup files
 *~
 .\#
