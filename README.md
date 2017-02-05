@@ -14,6 +14,8 @@ Basically, you split your presentation into paarts, part1.tex to partn.tex and p
 
 Then you compile them towards the both main files and voila - you get your presentation and your handouts. Write once, compile to both. 
 
+![Overview](assets/overview.png "Overview of the Concept")
+
 Note: You should target on formatting your pages for the beamer presentation layout. Nobody cares, if the content is split over pages in your handouts. But on your presentation you want everything to look nice.
 
 Tweak with the config files to customize for your own needs.
