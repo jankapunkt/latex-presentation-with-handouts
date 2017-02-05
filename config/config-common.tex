@@ -1,0 +1,81 @@
+
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% some tex-live fonts - choose your own
+
+%\usepackage[defaultsans]{droidsans}
+%\usepackage[default]{comfortaa}
+%\usepackage{cmbright}
+\usepackage[default]{raleway}
+%\usepackage{fetamont}
+%\usepackage[default]{gillius}
+%\usepackage[light,math]{iwona}
+%\usepackage[thin]{roboto} 
+
+% set font default
+\renewcommand*\familydefault{\sfdefault} 	
+\usepackage[T1]{fontenc}
+
+% more font size definitions
+\usepackage{moresize} 
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\usepackage{color}
+
+\definecolor{arsenic}{rgb}{0.23, 0.27, 0.29}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+
+%----------------------------------------------------------------------------------------
+%	CODE SYNTAX HIGHLIGHT
+%----------------------------------------------------------------------------------------
+
+% thanks to: http://tex.stackexchange.com/questions/89574/language-option-supported-in-listings
+
+\usepackage{listings}
+
+
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof,instanceof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, of, const, let},
+  keywordstyle=\color{orange}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{orange}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{coolblack}\ttfamily,
+  morestring=[b]',
+  morestring=[b]",
+ xleftmargin=0.7cm, xrightmargin=0.5cm,
+ rulesepcolor=\color{black},
+ showspaces=false,showtabs=false,tabsize=2,
+ numberstyle=\tiny,numbers=left,
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+

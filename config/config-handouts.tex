@@ -1,0 +1,46 @@
+
+
+% RECREATE FRAME TO NOTHING SO WE CAN JUST INCLUDE IT AS IT IS
+\renewenvironment{frame}{}{}
+
+% replacement for \frametitle
+\newcommand{\frametitle}[1]{\subsection{#1}}
+
+% replacement for \pause
+\newcommand{\pause}{\newline}
+
+
+\newcommand{\subtitle}[1]{#1}
+
+\newcommand{\institute}[1]{#1}
+
+\newcommand{\inst}[1]{}
+
+\renewcommand{\and}{and}
+
+\newcommand{\subject}[1]{{#1}}
+
+\newcommand{\only}[1]{\item #1}
+
+\renewcommand{\itemize}[1]{
+	\renewcommand{\item}[1]{#1}
+}{}
+
+
+\usepackage{graphicx}
+
+\usepackage{xcolor}
+
+\newenvironment{columns}{}{}
+
+\newenvironment{column}{}{}
+
+\newenvironment{block}{\begin{quote}}{\end{quote}}
+
+\newenvironment{alertblock}{}{}
+
+\newenvironment{exampleblock}{}{}
+
+\newcommand{\insertframenumber}{\thepage}
+
+\newcommand{\inserttotalframenumber}{\thepage}
