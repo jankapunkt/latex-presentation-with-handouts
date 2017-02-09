@@ -31,16 +31,24 @@
 
 \usepackage{xcolor}
 
-\newenvironment{columns}{}{}
+\newenvironment{columns}[3]{}{}
 
-\newenvironment{column}{}{}
+\newenvironment{column}[4]{}{}
 
-\newenvironment{block}{\begin{quote}}{\end{quote}}
+\newenvironment{block}[2]{
+	\textbf{\uppercase{#1}}\\
+	#2\hspace{-2pt}}{}
 
-\newenvironment{alertblock}{}{}
+\newenvironment{alertblock}[2]{
+	\textbf{\uppercase{#1}}\\
+	#2\hspace{-3pt}}{}
 
-\newenvironment{exampleblock}{}{}
+\newenvironment{exampleblock}[2]{
+	\textbf{\uppercase{#1}}\\
+	#2\hspace{-3pt}}{}
+
+
+\usepackage{lastpage}
 
 \newcommand{\insertframenumber}{\thepage}
-
 \newcommand{\inserttotalframenumber}{\thepage}

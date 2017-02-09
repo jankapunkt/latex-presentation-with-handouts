@@ -21,19 +21,27 @@
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
-\title[Look at this!]{Look at This!}
-\subtitle{A Beamer Presentation with Handouts}
-\author[Jan K\"uster]{Jan K\"uster}
-\institute[Your Institutions] % (optional)
-{
-  \inst{1}%
-  Institute of Presentation Theory\\
-  Insitution Name
-  \and
-  \inst{2}%
-  Institute of Presentation Practices\\
-  Insitution Name
-}
-\date[BREMEN 2017] % (optional)
-{Bremen 2017}
-\subject{Presenting Content}
+
+% WE DEFINE OUR TITLE INFORMATION AS VARIABLES
+% because beamer and other classes share not 100% the same commands
+% but we want to keep it DRY so we declare it here once and use the variables
+% in each compilation
+
+\def \titleFull {Writing a Presentation and Handouts with LaTex}
+\def \titleShort {Writing a Presentation and Handouts}
+\def \titleSub {An Example Guide}
+
+\def \authorFull {Jan K\"uster}
+\def \authorShort {J. K\"uster}
+
+\def \institutionFull {  
+	Digital Media M.Sc.\\
+	University of Bremen}
+
+\def \institutionShort {Uni Bremen}
+
+\def \dateFull {\today}
+\def \dateShort {\today}
+
+\def \subjectFull {Presenting Content}
+

@@ -26,7 +26,7 @@
 % we want to make a title page
 % two side allows us to make the page layout align by even and odd
 % openright tells the compiler that the first page is a right page
-\documentclass[pdftex,11pt,titlepage,twoside,openright]{report} 
+\documentclass[pdftex,11pt,titlepage,twoside,openright]{article} 
 
 
 %--------\usepackage{listings}--------------------------------------------------------------------------------
@@ -48,11 +48,16 @@
 
 \input{./config/config-handouts.tex}
 
+\input{./config/title-common.tex}
 
 \begin{document}
 
-\input{./config/title.tex}
+\input{./config/title-handouts.tex}
 \maketitle
+\newpage
+
+\tableofcontents
+\newpage
 
 \input{./content/page1.tex}
 

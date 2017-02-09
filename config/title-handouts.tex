@@ -21,35 +21,14 @@
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
-\documentclass{beamer}
 
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-% INCLUDE CONFIGURATION
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
+% WE TRANSLATE OUR DEFINED VARIABLES INTO A ARTICLE/REPORT TITLE PAGE
 
-\input{./config/config-common.tex}
+\title{
+	\titleFull\\
+	\titleSub
+}
 
-\input{./config/config-presentation.tex}
+\author{\authorFull \\ \institutionFull}
 
-\input{./config/title-common.tex}
-
-\input{./config/title-presentation.tex}
-
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-% BEGIN DOCUMENT
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-
-\begin{document}
-
-% see title settings in the config-common.tex
-\frame{\titlepage}
-
-
-\begin{frame}
-	\frametitle{Table of Contents}
-	\tableofcontents[currentsection]
-\end{frame}
-
-\input{./content/page1.tex}
-
-\end{document}
+\date{\dateFull}
