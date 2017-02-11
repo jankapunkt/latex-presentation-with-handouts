@@ -27,9 +27,9 @@
 % OUTER THEME
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
-\useoutertheme{infolines}
-%\useoutertheme{miniframes}
-%\useouter%theme{shadow}
+%\useoutertheme{infolines}
+%\useoutertheme[subsection=false]{miniframes}
+%\useoutertheme{shadow}
 %\useoutertheme{sidebar}
 %\useoutertheme{smoothbars}
 %\useoutertheme{smoothtree}
@@ -53,35 +53,46 @@
 \setbeamercolor{alerted text}{fg=orange}
 \setbeamercolor{background canvas}{bg=white}
 
-\setbeamercolor{block body alerted}{bg=normal text.bg!90!gray}
-\setbeamercolor{block body}{bg=normal text.bg!90!gray}
-\setbeamercolor{block body example}{bg=normal text.bg!90!gray}
-\setbeamercolor{block title alerted}{use={normal text,alerted text},fg=alerted text.fg!75!normal text.fg,bg=normal text.bg!75!gray}
-\setbeamercolor{block title}{bg=black}
-\setbeamercolor{block title example}{use={normal text,example text},fg=example text.fg!75!normal text.fg,bg=normal text.bg!75!green}
+\setbeamercolor{block title}{bg=gray, fg=white}
+\setbeamercolor{block body}{bg=lightgray}
 
-\setbeamercolor{fine separation line}{}
-\setbeamercolor{frametitle}{fg=white}
-\setbeamercolor{item projected}{fg=white}
-\setbeamercolor{normal text}{bg=black,fg=coolblack}
+\setbeamercolor{block title alerted}{,fg=white ,bg=orange}
+\setbeamercolor{block body alerted}{bg=lightgray}
 
-\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
-\setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
-\setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
-\setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
+\setbeamercolor{block title example}{fg=white,bg=coolblack}
+\setbeamercolor{block body example}{bg=lightgray}
 
-\setbeamercolor{section in sidebar}{fg=orange}
-\setbeamercolor{section in sidebar shaded}{fg=gray}
+\setbeamercolor{fine separation line}{fg=lightgray}
 
-\setbeamercolor{separation line}{}
+\setbeamercolor{item projected}{bg=orange, fg=white}
 
-\setbeamercolor{sidebar}{bg=white}
-\setbeamercolor{sidebar}{parent=palette primary}
-\setbeamercolor{structure}{bg=coolblack, fg=orange}
-\setbeamercolor{subsection in sidebar}{fg=orange}
-\setbeamercolor{subsection in sidebar shaded}{fg=white}
-\setbeamercolor{title}{fg=white}
-\setbeamercolor{titlelike}{fg=white}
+\setbeamercolor{normal text}{bg=black,fg=black}
+
+%\setbeamercolor{palette sidebar primary}{fg=purple}
+%\setbeamercolor{palette sidebar quaternary}{fg=purple}
+%\setbeamercolor{palette sidebar secondary}{fg=purple}
+%\setbeamercolor{palette sidebar tertiary}{fg=purple}
+
+%\setbeamercolor{section in sidebar}{fg=green}
+%\setbeamercolor{section in sidebar shaded}{fg=gray}
+
+\setbeamercolor{separation line}{bg=gray, fg=gray}
+
+%\setbeamercolor{sidebar}{bg=white}
+%\setbeamercolor{sidebar}{parent=palette primary}
+
+\setbeamercolor{structur}{bg=gray, fg=orange}
+
+%\setbeamercolor{subsection in sidebar}{fg=orange}
+%\setbeamercolor{subsection in sidebar shaded}{fg=white}
+
+\setbeamercolor{title}{bg=coolblack, fg=white}
+\setbeamercolor{titlelike}{bg=coolblack, fg=white}
+
+\setbeamercolor{author}{bg=white, fg=black}
+\setbeamercolor{authorlike}{bg=white, fg=black}
+
+\setbeamercolor{frametitle}{bg=coolblack,fg=white}
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 %	FONT / TPOGRAPHY CONFIGURATION
