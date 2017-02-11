@@ -81,7 +81,7 @@
 %\setbeamercolor{sidebar}{bg=white}
 %\setbeamercolor{sidebar}{parent=palette primary}
 
-\setbeamercolor{structur}{bg=gray, fg=orange}
+\setbeamercolor{structure}{bg=coolblack, fg=orange}
 
 %\setbeamercolor{subsection in sidebar}{fg=orange}
 %\setbeamercolor{subsection in sidebar shaded}{fg=white}
@@ -112,6 +112,19 @@
 
 % removes the bottom right buttons
 \beamertemplatenavigationsymbolsempty
+
+\setbeamertemplate{mini frames}[box]
+
+\setbeamertemplate{headline}{
+\leavevmode%
+\hbox{%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2.3ex,dp=1.125ex]{palette quaternary}%
+		 \insertnavigation{\paperwidth}{}{\hskip0pt plus1filll}%
+	\end{beamercolorbox}%
+	}
+    \vspace*{2ex}%
+}
+
 
 
 % show on every new section / subsection the TOC
